@@ -21,40 +21,40 @@
   <h1>Its all about Forms</h1>
 
   <form autocomplete="off" id="main-form">
+    <h2>Main form</h2>
     <label for="first-name">First Name</label>
-    <br>
-    <input type="text" name="first-name" id="first-name">
-    <br>
+    <input class="text-input" type="text" name="first-name" id="first-name">
     <label for="last-name">Surname</label>
-    <br>
-    <input type="text" name="last-name" id="last-name">
-    <br>
-
+    <input class="text-input" type="text" name="last-name" id="last-name">
 
     <fieldset>
       <legend>Universitetas</legend>
-      <input type="radio" name="uni" id="ktu" value="ktu">
-      <label for="ktu">Kauno technologijos Universitetas</label>
-      <br>
-      <input type="radio" name="uni" id="vdu" value="vdu">
-      <label for="vdu">Vytauto Didziojo Universitetas</label>
-      <br>
-      <input type="radio" name="uni" id="ku" value="ku">
-      <label for="ku">Klaipedos Universitetas</label>
+      <div>
+        <input type="radio" name="uni" id="ktu" value="ktu">
+        <label for="ktu">Kauno technologijos Universitetas</label>
+      </div>
+      <div>
+        <input type="radio" name="uni" id="vdu" value="vdu">
+        <label for="vdu">Vytauto Didziojo Universitetas</label>
+      </div>
+      <div>
+        <input type="radio" name="uni" id="ku" value="ku">
+        <label for="ku">Klaipedos Universitetas</label>
+      </div>
     </fieldset>
 
     <fieldset>
       <legend>Favorite day(s)</legend>
       <input type="checkbox" name="weekday" id="mon" value="monday">
-      <label for="mon">Monday</label> <br>
+      <label for="mon">Monday</label>
       <input type="checkbox" name="weekday" id="tue" value="tuesday">
-      <label for="tue">Tuesday</label> <br>
+      <label for="tue">Tuesday</label>
       <input type="checkbox" name="weekday" id="wed" value="wednesday">
-      <label for="wed">Wednesday</label> <br>
+      <label for="wed">Wednesday</label>
     </fieldset>
 
     <label for="town">Where are you from</label>
-    <select name="town" id="town">
+    <select class="text-input" name="town" id="town">
       <option selected value="">--no town</option>
       <option value="kaunas">Kaunas</option>
       <option value="vilnius">Vilnius</option>
@@ -63,8 +63,8 @@
 
     <fieldset>
       <legend>Login</legend>
-      <input type="email" name="email" placeholder="Enter your email"><br>
-      <input type="password" name="pass" placeholder="Enter your password">
+      <input class="text-input" type="email" name="email" placeholder="Enter your email">
+      <input class="text-input" type="password" name="pass" placeholder="Enter your password">
     </fieldset>
 
     <!-- prideti fieldset su pavadinimu Birthday -->
@@ -76,14 +76,14 @@
 
     <fieldset>
       <legend>Birthday</legend>
-      <label for="bday">Your B day</label><br>
-      <input type="date" name="bday" id="bday">
-      <input type="time" name="time" id="time">
+      <label for="bday">Your B day</label>
+      <input class="text-input" type="date" name="bday" id="bday">
+      <input class="text-input" type="time" name="time" id="time">
     </fieldset>
 
 
 
-    <br>
+
     <button type="submit">Send</button>
     <!-- END OF FORM -->
   </form>
