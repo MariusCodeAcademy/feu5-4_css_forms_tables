@@ -46,10 +46,28 @@ h1 {
   width: 45%;
 }
 
+.row-q4 {
+  width: 22%;
+}
+
 .text-input {
   border: none;
   border-radius: 4px;
-  background-color: #b8b8b8;
+  background-color: #e5e5e5;
   padding: 12px 18px;
   font-size: 16px;
+}
+
+/* Customer block */
+.customer-block {
+  margin-top: 50px;
+}
+
+.customer-block label {
+  font-size: 17px;
+  margin-right: 40px;
+}
+
+.customer-block input {
+  accent-color: green;
 }

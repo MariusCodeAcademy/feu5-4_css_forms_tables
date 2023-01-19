@@ -19,14 +19,48 @@
   <main>
     <h1>EVENT REGISTRATION FORM</h1>
     <form class="event">
+      <!-- name lastname -->
       <div class="form-row">
         <label class="row-label" for="f-name">Name</label>
         <input class="row-half text-input" type="text" name="f-name" id="f-name">
         <input class="row-half text-input" type="text" name="l-name" id="l-name">
       </div>
+      <!-- company -->
       <div class="form-row">
         <label class="row-label" for="company">Company</label>
         <input class="row-full text-input" type="text" name="company" id="company">
+      </div>
+      <!-- EMail -->
+      <div class="form-row">
+        <label class="row-label" for="email">Email</label>
+        <input class="row-full text-input" type="email" name="email" id="email">
+      </div>
+
+      <!-- Phone -->
+      <div class="form-row">
+        <label class="row-label" for="phone">Phone</label>
+        <input class="row-q4 text-input" type="number" name="phone-code" id="phone-code" min="100" max="999">
+        <input class="row-full text-input" type="number" name="phone" id="phone" min="100000" max="999999">
+      </div>
+
+      <!-- Subject -->
+      <div class="form-row">
+        <label class="row-label" for="subject">Subject</label>
+        <select class="row-full text-input" name="subject" id="subject">
+          <option disabled selected value="">chose option</option>
+          <option value="1">Kaunas</option>
+          <option value="2">Vilnius</option>
+          <option value="3">Klaipeda</option>
+        </select>
+      </div>
+
+      <!-- customer block -->
+      <div class="customer-block">
+        <p><strong>Are you an existing customer?</strong></p>
+        <input type="radio" name="cust" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="cust" id="no" checked>
+        <label for="no">No</label>
       </div>
     </form>
   </main>
