@@ -21,9 +21,16 @@
     <form class="event">
       <!-- name lastname -->
       <div class="form-row">
-        <label class="row-label" for="f-name">Name</label>
-        <input class="row-half text-input" type="text" name="f-name" id="f-name">
-        <input class="row-half text-input" type="text" name="l-name" id="l-name">
+        <h2 class="row-label">Name</h2>
+        <div class="row-half">
+          <input class="text-input row-full" type="text" name="f-name" id="f-name">
+          <label class="label-under" for="f-name">First Name</label>
+        </div>
+
+        <div class="row-half">
+          <input class="row-full text-input" type="text" name="l-name" id="l-name">
+          <label class="label-under" for="l-name">Last Name</label>
+        </div>
       </div>
       <!-- company -->
       <div class="form-row">
@@ -62,6 +69,8 @@
         <input type="radio" name="cust" id="no" checked>
         <label for="no">No</label>
       </div>
+
+      <button type="submit" class="btn-form">Submit</button>
     </form>
   </main>
 
