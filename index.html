@@ -32,8 +32,6 @@
 
     <fieldset>
       <legend>Universitetas</legend>
-      <!-- sukurti radio inputus kurie leistu pasirinkti KTU, VDU, LKL -->
-
       <input type="radio" name="uni" id="ktu" value="ktu">
       <label for="ktu">Kauno technologijos Universitetas</label>
       <br>
@@ -42,10 +40,41 @@
       <br>
       <input type="radio" name="uni" id="ku" value="ku">
       <label for="ku">Klaipedos Universitetas</label>
-
-      <!-- visi radio inputai turi ta pati name -->
     </fieldset>
+
+    <fieldset>
+      <legend>Favorite day(s)</legend>
+      <input type="checkbox" name="weekday" id="mon" value="monday">
+      <label for="mon">Monday</label> <br>
+      <input type="checkbox" name="weekday" id="tue" value="tuesday">
+      <label for="tue">Tuesday</label> <br>
+      <input type="checkbox" name="weekday" id="wed" value="wednesday">
+      <label for="wed">Wednesday</label> <br>
+    </fieldset>
+
+    <label for="town">Where are you from</label>
+    <select name="town" id="town">
+      <option selected value="">--no town</option>
+      <option value="kaunas">Kaunas</option>
+      <option value="vilnius">Vilnius</option>
+      <option value="klaipeda">Klaipeda</option>
+    </select>
+
+    <fieldset>
+      <legend>Login</legend>
+      <input type="email" name="email" placeholder="Enter your email"><br>
+      <input type="password" name="pass" placeholder="Enter your password">
+    </fieldset>
+
+    <!-- prideti fieldset su pavadinimu Birthday -->
+    <!-- ikelti label ir input kad leisti pasirinkti data -->
+    <!-- prideti label ir intu kuris leistu pasirinkti laika -->
+
+
+
+    <br>
     <button type="submit">Send</button>
+    <!-- END OF FORM -->
   </form>
 
 </body>
