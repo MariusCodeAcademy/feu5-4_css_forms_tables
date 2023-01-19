@@ -20,7 +20,7 @@
 
   <h1>Its all about Forms</h1>
 
-  <form autocomplete="off">
+  <form autocomplete="off" id="main-form">
     <label for="first-name">First Name</label>
     <br>
     <input type="text" name="first-name" id="first-name">
@@ -33,8 +33,16 @@
     <fieldset>
       <legend>Universitetas</legend>
       <!-- sukurti radio inputus kurie leistu pasirinkti KTU, VDU, LKL -->
-      <!-- sukurti input -->
-      <!-- sukurti label -->
+
+      <input type="radio" name="uni" id="ktu" value="ktu">
+      <label for="ktu">Kauno technologijos Universitetas</label>
+      <br>
+      <input type="radio" name="uni" id="vdu" value="vdu">
+      <label for="vdu">Vytauto Didziojo Universitetas</label>
+      <br>
+      <input type="radio" name="uni" id="ku" value="ku">
+      <label for="ku">Klaipedos Universitetas</label>
+
       <!-- visi radio inputai turi ta pati name -->
     </fieldset>
     <button type="submit">Send</button>
