@@ -1,6 +1,6 @@
 table {
   border: 1px solid black;
-  width: 100%;
+  width: 600px;
   border-collapse: collapse;
 }
 
@@ -13,4 +13,20 @@ td {
 
 tbody tr:nth-child(even) {
   background-color: #cacaca;
+}
+
+tr:hover {
+  outline: 2px solid darkgoldenrod;
+}
+
+/* responsive */
+
+.responsive-table-overflow {
+  width: 400px;
+  overflow: auto;
+}
+
+article {
+  height: 200px;
+  border: 4px dashed #000;
 }
